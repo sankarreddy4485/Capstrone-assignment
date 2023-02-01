@@ -14,17 +14,14 @@ public class CoachprofileApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CoachprofileApplication.class, args);
 	}
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		
-		return new WebMvcConfigurer() {
-			
-			@Override
-			public void addCorsMappings(CorsRegistry corsRegistry) {
-				corsRegistry.addMapping("/**").allowedOrigins("http://localhost:3000");
-			}
-		};
-		
-	}
-
+	/*
+	 * @Bean public WebMvcConfigurer corsConfigurer() {
+	 * 
+	 * return new WebMvcConfigurer() {
+	 * 
+	 * @Override public void addCorsMappings(CorsRegistry corsRegistry) {
+	 * corsRegistry.addMapping("/**").allowedOrigins("http://localhost:3000"); } };
+	 * 
+	 * }
+	 */
 }

@@ -29,6 +29,8 @@ public class UserProfileResponse {
 		this.city=userProfile.getCity();
 		this.state=userProfile.getState();
 		this.email=userProfile.getEmail();
+		this.country=userProfile.getCountry();
+		this.pincode=userProfile.getPincode();
 				
 	}
 	public String getName() {
